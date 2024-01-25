@@ -28,3 +28,7 @@ class Choice(models.Model):
     
 class Statistics(models.Model):
     number_questions_answered = models.ForeignKey(Question)
+    
+class Comments(models.Model):
+    number_questions_answered = models.ForeignKey(Question)
+    
