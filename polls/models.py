@@ -25,3 +25,6 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
     def __str__(self):
         return self.choice_text
+    
+class Statistics(models.Model):
+    number_questions_answered = models.ForeignKey(Question)
